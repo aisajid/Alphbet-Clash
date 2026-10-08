@@ -82,27 +82,28 @@
                     <button class="btn bg-[#894189] rounded-full border-none text-white text-xl font-medium normal-case inter-normal ">
                         Life
                         <img src="images/heart.svg" alt="">
-                        <span>0</span>
+                        <span id="life-element">5</span>
                     </button>
                     <!-- button 2 -->
                     <button class="btn bg-[#360490] text-white text-xl font-medium border-none rounded-full normal-case inter-normal ">
                         score
                         <img src="images/dollar.svg" alt="">
-                        <span>0</span>
+                        <span id="score-area">0</span>
                     </button>
                 </div>
             </div>
 
         </section>
         <!-- score section -->
-        <section class="score poppins-normal flex flex-col justify-center items-center min-h-screen hidden">
+        <section id="score-section" class="poppins-normal flex flex-col justify-center items-center min-h-screen hidden text-white">
             <div class="text-center space-y-6 bg-[#FFFFFF33] rounded-lg px-12 py-11">
-                <h1 class="text-7xl  text-white">
+                <h3 class="text-3xl">Game Over!</h3>
+                <h1 class="text-7xl  ">
                     <span class="font-extrabold">Score: </span>
-                    <span class="font-medium">14</span>
+                    <span id="total-score-area" class="font-medium">0</span>
                 </h1>
-                <button class="btn text-2xl font-semibold text-[#010313] bg-white normal-case">Play Again</button>
-                <p class="text-xl font-medium text-white ">Practice will make you a Pro</p>
+                <button onclick="play()" class="btn text-2xl font-semibold text-[#010313] bg-white normal-case">Play Again</button>
+                <p class="text-xl font-medium">Practice will make you a Pro</p>
             </div>
         </section>
     </main>
